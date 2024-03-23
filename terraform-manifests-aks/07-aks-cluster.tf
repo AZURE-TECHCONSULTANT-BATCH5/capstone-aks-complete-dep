@@ -64,9 +64,9 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   }
 
 # Added June 2023
-# oms_agent {
-#   log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
-# }
+oms_agent {
+  log_analytics_workspace_id = azurerm_log_analytics_workspace.insights.id
+}
 # Add On Profiles
 #  addon_profile {
 #    azure_policy {enabled =  true}
